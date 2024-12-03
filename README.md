@@ -7,7 +7,7 @@ Install current [LTS and STS versions](https://dotnet.microsoft.com/en-us/platfo
 To use this action in your GitHub repository, you can follow these steps:
 
 ```yaml
-uses: maurosoft1973/dotnet-install@v1
+uses: maurosoft1973/gha-dotnet-install@v1
 ```
 
 ### Inputs
@@ -31,7 +31,7 @@ This action has no outputs.
 ```yaml
 steps:
   - name: Install .NET
-    uses: maurosoft1973/dotnet-install@v1
+    uses: maurosoft1973/gha-dotnet-install@v1
 ```
 
 ### Install LTS,STS, end of life and preview versions of .NET SDK
@@ -39,7 +39,7 @@ steps:
 ```yaml
 steps:
   - name: Install .NET
-    uses: maurosoft1973/dotnet-install@v1
+    uses: maurosoft1973/gha-dotnet-install@v1
     with:
       includeEndOfFileVersion: 'true'
       includePreview: 'true'
